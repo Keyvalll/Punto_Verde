@@ -1,78 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".RegisterActivity"
-    android:gravity="center"
-    android:paddingStart="32dp"
-    android:paddingEnd="32dp">
+    tools:context=".RegisterActivity">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="210dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/logo_mhwi" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/ly_txt_Email"
-        android:layout_width="match_parent"
-        android:layout_height="53dp"
-        android:layout_marginTop="24dp">
-
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/txt_Email"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
-            android:inputType="textPersonName" />
-    </android.support.design.widget.TextInputLayout>
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:orientation="vertical">
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/ly_txt_Name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="373dp"
+                android:layout_height="311dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/pollo" />
 
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/txt_Name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Name"
-            android:inputType="textEmailAddress" />
-    </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:id="@+id/link_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Do you have a acount?"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"/>
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/ly_txt_Password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp">
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Nombre Completo"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"/>
 
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/txt_Password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Password"
-            android:inputType="textVisiblePassword" />
-    </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ly_txt_Email"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp">
 
-    <Button
-        android:id="@+id/btn_register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Register"
-        android:layout_marginTop="24dp" />
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txt_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName" />
 
-    <TextView
-        android:id="@+id/link_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Do you have a acount?"
-         />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Fecha de Nacimiento"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ly_txt_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txt_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Correo electrónico"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ly_txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textVisiblePassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Contraseña"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ly_txt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txt_password"
+                    android:layout_width="346dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textVisiblePassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Confirmar contraseña"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ly_txt_confirm_pass"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txt_confirm_pass"
+                    android:layout_width="346dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textVisiblePassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/rounded_button"
+                android:text="Register" />
 
 
-</LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

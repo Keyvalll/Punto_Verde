@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProductActivity">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <RelativeLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/pollo.jpg"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/pollo"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="524dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="224dp"
+                android:background="@drawable/layaout_product"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:textSize="30dp"
+                    android:text="Arbol de Seda"
+                    android:textColor="@color/principal_color_dark_green"
+                    />
+                <TextView
+                    android:id="@+id/type_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:textSize="20dp"
+                    android:text="Restaurante vegetariano"
+                    android:textColor="@color/letter_dark_gray"
+                    />
+                <TextView
+                    android:id="@+id/descriptionTitle_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:textSize="22dp"
+                    android:text="Descripcion"
+                    android:textColor="@color/principal_color_dark_green"
+                    />
+                <TextView
+                    android:id="@+id/description_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:textSize="15dp"
+                    android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget, porta phasellus nascetur ullamcorper faucibus senectus felis mus volutpat."
+                    android:textColor="@color/letter_dark_gray"
+                    />
+                <TextView
+                    android:id="@+id/timetableTitle_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:textSize="22dp"
+                    android:text="Horario"
+                    android:textColor="@color/principal_color_dark_green"
+                    />
+                <TextView
+                    android:id="@+id/timetable_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:textSize="15dp"
+                    android:text="De 9:00 a.m a 10:00 pm"
+                    android:textColor="@color/letter_dark_gray" />
+
+                <TextView
+                    android:id="@+id/ubicationTitle_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:textSize="22dp"
+                    android:text="Ubicacion"
+                    android:textColor="@color/principal_color_dark_green"
+                    />
+
+                <TextView
+                    android:id="@+id/galeryTitle_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:textSize="22dp"
+                    android:text="Galeria de Imagenes"
+                    android:textColor="@color/principal_color_dark_green"
+                    />
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
