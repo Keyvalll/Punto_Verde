@@ -57,6 +57,50 @@
                     android:text="Restaurante vegetariano"
                     android:textColor="@color/letter_dark_gray"
                     />
+
+                <GridLayout
+                    android:id="@+id/gridlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="5"
+                    android:paddingStart="32dp"
+                    android:padding="10dp"
+                    android:paddingTop="0dp"
+                    android:gravity="center"
+                    android:paddingLeft="32dp">
+
+                <ImageView
+                    android:id="@+id/estrella1_llena1"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_marginRight="7dp"
+                    app:srcCompat="@drawable/estrella_llena" />
+                    <ImageView
+                        android:id="@+id/estrella1_llena2"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_marginRight="7dp"
+                        app:srcCompat="@drawable/estrella_llena" />
+                    <ImageView
+                        android:id="@+id/estrella1_llena3"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_marginRight="7dp"
+                        app:srcCompat="@drawable/estrella_llena" />
+                    <ImageView
+                        android:id="@+id/estrella1_llena4"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_marginRight="7dp"
+                        app:srcCompat="@drawable/estrella_llena" />
+                    <ImageView
+                        android:id="@+id/estrella1_vacia5"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_marginRight="7dp"
+                        app:srcCompat="@drawable/estrella_vacia" />
+
+                </GridLayout>
                 <TextView
                     android:id="@+id/descriptionTitle_place"
                     android:layout_width="match_parent"
@@ -113,17 +157,30 @@
                     android:textColor="@color/principal_color_dark_green"
                     />
 
+                <fragment
+                    android:id="@+id/mapa"
+                    android:layout_marginTop="10dp"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:radius="150dp"
+
+                    />
+
                 <TextView
                     android:id="@+id/galeryTitle_place"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
+                    android:layout_marginTop="10dp"
                     android:paddingStart="32dp"
                     android:paddingEnd="32dp"
                     android:textSize="22dp"
                     android:text="Galeria de Imagenes"
                     android:textColor="@color/principal_color_dark_green"
                     />
+
+
 
 
 

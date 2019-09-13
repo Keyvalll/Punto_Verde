@@ -25,7 +25,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
         txt_Email = findViewById(R.id.txt_Email);
         txt_Name = findViewById(R.id.txt_Name);
-        txt_Password = findViewById(R.id.txt_Password);
+        txt_Password = findViewById(R.id.txt_password);
 
         findViewById(R.id.btn_register).setOnClickListener(this);
         findViewById(R.id.link_login).setOnClickListener(this);
