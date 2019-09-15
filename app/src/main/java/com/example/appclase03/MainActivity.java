@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.logout:
                 AppPreferences.getInstance(this).clear();
-                Intent intent = new Intent(this, LoginActivity.class);
-                startActivity(intent);
+                //Intent intent = new Intent(this, LoginActivity.class);
+                //startActivity(intent);
                 finish();
                 return true;
             default:

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.LoginFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="354dp"
+        tools:layout_editor_absoluteY="687dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="24dp"
+                android:text="Correo electrónico" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="346dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center"
+                android:inputType="textPersonName"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contraseña"
+                android:layout_marginTop="24dp"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="346dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:inputType="textPassword"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp" />
+
+            <Button
+                android:id="@+id/button_login"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:text="Iniciar sesión"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="24dp"
+                android:layout_width="250dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:text="Olvido contraseña?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#587AE0"
+                android:textColorLink="#4C4CE0"
+                android:layout_marginTop="24dp"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

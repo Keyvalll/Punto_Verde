@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">app clase 03</string>
     <string name="title_activity_maps">Map</string>
+    <string name="tab_text_1">Inicio de sesión</string>
+    <string name="tab_text_2">Registrarse</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
