@@ -13,12 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".PlaceActivity"></activity>
         <activity
             android:name=".acount_activity"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity
-            android:name=".Register_Fragment"
-            android:theme="@style/Apptheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ProductActivity"
             android:theme="@style/Apptheme.NoActionBar" />
@@ -45,9 +43,6 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme" />
-        <activity
-            android:name=".RegisterActivity"
-            android:theme="@style/Apptheme.NoActionBar" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

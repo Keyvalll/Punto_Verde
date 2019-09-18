@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".ui.fragments.RegisterFragment">
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -16,22 +15,6 @@
             android:layout_marginLeft="0dp"
             android:layout_marginRight="0dp"
             android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="match_parent"
-                android:layout_height="328dp"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/fondoimagen" />
-
-            <TextView
-                android:id="@+id/link_login"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:text="Do you have a acount?"
-                android:paddingStart="32dp"
-                android:paddingEnd="32dp"/>
 
             <TextView
                 android:id="@+id/textView4"
@@ -47,13 +30,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="53dp"
                 android:paddingStart="32dp"
-                android:paddingEnd="32dp">
+                android:paddingEnd="32dp"
+                android:maxLength="60">
 
                 <android.support.design.widget.TextInputEditText
                     android:id="@+id/txt_Email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:maxLength="60"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -71,13 +56,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingStart="32dp"
-                android:paddingEnd="32dp">
+                android:paddingEnd="32dp"
+                android:maxLength="60">
 
                 <android.support.design.widget.TextInputEditText
                     android:id="@+id/txt_Name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textEmailAddress" />
+                    android:inputType="textEmailAddress"
+                    android:maxLength="60"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -95,12 +82,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingStart="32dp"
-                android:paddingEnd="32dp">
+                android:paddingEnd="32dp"
+                android:maxLength="60">
                 <android.support.design.widget.TextInputEditText
                     android:id="@+id/txt_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textVisiblePassword" />
+                    android:inputType="textVisiblePassword"
+                    android:maxLength="60"/>
             </android.support.design.widget.TextInputLayout>
 
             <TextView
@@ -117,13 +106,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingStart="32dp"
-                android:paddingEnd="32dp">
+                android:paddingEnd="32dp"
+                android:maxLength="25">
 
                 <android.support.design.widget.TextInputEditText
                     android:id="@+id/txt_Password"
                     android:layout_width="346dp"
                     android:layout_height="wrap_content"
-                    android:inputType="textVisiblePassword" />
+                    android:inputType="textVisiblePassword"
+                    android:maxLength="25"/>
             </android.support.design.widget.TextInputLayout>
 
             <TextView
@@ -140,13 +131,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:paddingStart="32dp"
-                android:paddingEnd="32dp">
+                android:paddingEnd="32dp"
+                android:maxLength="25">
 
                 <android.support.design.widget.TextInputEditText
                     android:id="@+id/txt_confirm_pass"
                     android:layout_width="346dp"
                     android:layout_height="wrap_content"
-                    android:inputType="textVisiblePassword" />
+                    android:inputType="textVisiblePassword"
+                    android:maxLength="25" />
             </android.support.design.widget.TextInputLayout>
 
             <Button
@@ -161,8 +154,5 @@
 
 
         </LinearLayout>
-
     </ScrollView>
-
-
-</RelativeLayout>
+</FrameLayout>
