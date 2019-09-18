@@ -20,20 +20,26 @@
             android:layout_marginRight="0dp"
             android:orientation="vertical"
             >
+
+
             <ImageView
                 android:id="@+id/pollo.jpg"
                 android:layout_width="fill_parent"
-                android:layout_height="250dp"
+                android:layout_height="255dp"
+                android:layout_marginTop="-15dp"
                 app:srcCompat="@drawable/pollo"/>
+
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="524dp"
                 android:layout_marginLeft="0dp"
                 android:layout_marginRight="0dp"
-                android:layout_marginTop="224dp"
+                android:layout_marginTop="204dp"
                 android:background="@drawable/layaout_product"
                 android:orientation="vertical">
+
+
 
                 <TextView
                     android:id="@+id/name_place"
@@ -59,7 +65,7 @@
                     />
 
                 <GridLayout
-                    android:id="@+id/gridlayout"
+                    android:id="@+id/gridlayout_estrellas"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:columnCount="5"
@@ -74,31 +80,31 @@
                     android:layout_width="17dp"
                     android:layout_height="17dp"
                     android:layout_marginRight="7dp"
-                    app:srcCompat="@drawable/estrella_llena" />
+                    app:srcCompat="@drawable/Recurso29EstrellaRellena" />
                     <ImageView
                         android:id="@+id/estrella1_llena2"
                         android:layout_width="17dp"
                         android:layout_height="17dp"
                         android:layout_marginRight="7dp"
-                        app:srcCompat="@drawable/estrella_llena" />
+                        app:srcCompat="@drawable/Recurso29EstrellaRellena" />
                     <ImageView
                         android:id="@+id/estrella1_llena3"
                         android:layout_width="17dp"
                         android:layout_height="17dp"
                         android:layout_marginRight="7dp"
-                        app:srcCompat="@drawable/estrella_llena" />
+                        app:srcCompat="@drawable/Recurso29EstrellaRellena" />
                     <ImageView
                         android:id="@+id/estrella1_llena4"
                         android:layout_width="17dp"
                         android:layout_height="17dp"
                         android:layout_marginRight="7dp"
-                        app:srcCompat="@drawable/estrella_llena" />
+                        app:srcCompat="@drawable/Recurso29EstrellaRellena" />
                     <ImageView
                         android:id="@+id/estrella1_vacia5"
                         android:layout_width="17dp"
                         android:layout_height="17dp"
                         android:layout_marginRight="7dp"
-                        app:srcCompat="@drawable/estrella_vacia" />
+                        app:srcCompat="@drawable/Recurso30EstrellaNoRellena" />
 
                 </GridLayout>
                 <TextView
@@ -181,8 +187,240 @@
                     />
 
 
+                <GridLayout
+                    android:id="@+id/gridlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:columnCount="4"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="32dp">
+
+                    <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="7dp"
+                        app:corner_radius="16dp"
+                        android:background="#000">
 
 
+                        <ImageView
+                            android:id="@+id/imagen_galaria1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/restaurante1_1" />
+
+
+                    </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+                    <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="7dp"
+                        app:corner_radius="16dp"
+                        android:background="#000">
+
+
+                        <ImageView
+                            android:id="@+id/imagen_galaria2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/restaurante1_2" />
+
+
+                    </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+                    <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="7dp"
+                        app:corner_radius="16dp"
+                        android:background="#000">
+
+
+                        <ImageView
+                            android:id="@+id/imagen_galaria3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/restaurante1_3" />
+
+
+                    </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+                    <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="7dp"
+                        app:corner_radius="16dp"
+                        android:background="#000">
+
+                        <ImageView
+                            android:id="@+id/imagen_galaria4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/restaurante1_4" />
+
+
+                    </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+
+
+                </GridLayout>
+
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/Recurso34BotonCorazon"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="327dp"
+                android:layout_marginTop="178dp"
+                app:srcCompat="@drawable/Recurso34BotonCorazon" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="764dp"
+                android:background="@drawable/layaout_product_coments"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title_Coments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:textSize="20dp"
+                    android:text="Comentarios"
+                    android:textColor="@color/principal_color_dark_green"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_gravity="center"
+                    app:corner_radius="360dp"
+                    android:layout_marginLeft="32dp"
+                    android:background="#000">
+
+
+                    <ImageView
+                        android:id="@+id/imagen_galariae2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/restaurante1_2" />
+
+
+
+                </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+                    <EditText
+                        android:layout_width="300dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="Escribe un comentario"
+                        android:textColorHint="@color/principal_color_dark_green"
+                        android:padding="5dp"
+                        android:background="@drawable/edit_text_rounded"/>
+
+
+
+            </LinearLayout>
+
+                <View
+                    android:layout_width="335dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="32dp"
+                    android:background="@color/principal_color_dark_green"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+                    <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_gravity="center"
+                        app:corner_radius="360dp"
+                        android:layout_marginLeft="32dp"
+                        android:background="#000">
+
+
+                        <ImageView
+                            android:id="@+id/imagen_galariaejbhv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/restaurante1_2" />
+
+
+
+                    </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:id="@+id/personComentName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:paddingStart="2dp"
+                            android:paddingEnd="2dp"
+                            android:textSize="11dp"
+                            android:text="Ana Quiros"
+                            android:textColor="@color/principal_color_dark_green"
+                            />
+
+                        <TextView
+                            android:id="@+id/contenttextcoment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:paddingStart="2dp"
+                            android:paddingEnd="2dp"
+                            android:textSize="9dp"
+                            android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget, porta"
+                            android:textColor="@color/letter_dark_gray"
+                            />
+
+                        <TextView
+                            android:id="@+id/comentDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:paddingStart="2dp"
+                            android:paddingEnd="2dp"
+                            android:layout_marginLeft="210dp"
+                            android:textSize="9dp"
+                            android:text="September 9,2019."
+                            android:textColor="@color/letter_dark_gray"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
 
             </LinearLayout>
 
