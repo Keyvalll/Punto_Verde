@@ -13,10 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".PlaceActivity"></activity>
-        <activity
-            android:name=".acount_activity"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RegisterActivity"
+            android:theme="@style/Apptheme.NoActionBar"/>
+
+        <activity android:name=".LoginActivity"
+            android:theme="@style/Apptheme.NoActionBar" />
+
+        <activity android:name=".PlaceActivity" />
         <activity
             android:name=".ProductActivity"
             android:theme="@style/Apptheme.NoActionBar" />

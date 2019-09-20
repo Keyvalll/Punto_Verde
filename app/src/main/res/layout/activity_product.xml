@@ -7,12 +7,11 @@
     android:orientation="vertical"
     tools:context=".ProductActivity">
 
-
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="16dp">
 
         <RelativeLayout android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -20,20 +19,25 @@
             android:layout_marginRight="0dp"
             android:orientation="vertical"
             >
+
+
             <ImageView
                 android:id="@+id/pollo.jpg"
                 android:layout_width="fill_parent"
-                android:layout_height="250dp"
+                android:layout_height="255dp"
+                android:layout_marginTop="-15dp"
                 app:srcCompat="@drawable/pollo"/>
+
 
             <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="524dp"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="0dp"
+                android:layout_marginTop="204dp"
                 android:layout_marginRight="0dp"
-                android:layout_marginTop="224dp"
                 android:background="@drawable/layaout_product"
                 android:orientation="vertical">
+
 
                 <TextView
                     android:id="@+id/name_place"
@@ -42,10 +46,10 @@
                     android:layout_marginTop="24dp"
                     android:paddingStart="32dp"
                     android:paddingEnd="32dp"
-                    android:textSize="30dp"
                     android:text="Arbol de Seda"
                     android:textColor="@color/principal_color_dark_green"
-                    />
+                    android:textSize="30dp" />
+
                 <TextView
                     android:id="@+id/type_place"
                     android:layout_width="match_parent"
@@ -53,10 +57,58 @@
                     android:layout_marginTop="1dp"
                     android:paddingStart="32dp"
                     android:paddingEnd="32dp"
-                    android:textSize="20dp"
                     android:text="Restaurante vegetariano"
                     android:textColor="@color/letter_dark_gray"
-                    />
+                    android:textSize="20dp" />
+
+                <GridLayout
+                    android:id="@+id/gridlayout_estrellas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="5"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:paddingStart="32dp"
+                    android:paddingLeft="32dp"
+                    android:paddingTop="0dp">
+
+                    <ImageView
+                        android:id="@+id/estrella1_llena1"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_marginRight="7dp"
+                        app:srcCompat="@drawable/recurso29estrellarellena" />
+
+                    <ImageView
+                        android:id="@+id/estrella1_llena2"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_marginRight="7dp"
+                        app:srcCompat="@drawable/recurso29estrellarellena" />
+
+                    <ImageView
+                        android:id="@+id/estrella1_llena3"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_marginRight="7dp"
+                        app:srcCompat="@drawable/recurso29estrellarellena" />
+
+                    <ImageView
+                        android:id="@+id/estrella1_llena4"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_marginRight="7dp"
+                        app:srcCompat="@drawable/recurso29estrellarellena" />
+
+                    <ImageView
+                        android:id="@+id/estrella1_vacia5"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_marginRight="7dp"
+                        app:srcCompat="@drawable/recurso30estrellanorellena" />
+
+                </GridLayout>
+
                 <TextView
                     android:id="@+id/descriptionTitle_place"
                     android:layout_width="match_parent"
@@ -64,10 +116,10 @@
                     android:layout_marginTop="5dp"
                     android:paddingStart="32dp"
                     android:paddingEnd="32dp"
-                    android:textSize="22dp"
                     android:text="Descripcion"
                     android:textColor="@color/principal_color_dark_green"
-                    />
+                    android:textSize="22dp" />
+
                 <TextView
                     android:id="@+id/description_place"
                     android:layout_width="match_parent"
@@ -75,10 +127,10 @@
                     android:layout_marginTop="2dp"
                     android:paddingStart="32dp"
                     android:paddingEnd="32dp"
-                    android:textSize="15dp"
                     android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget, porta phasellus nascetur ullamcorper faucibus senectus felis mus volutpat."
                     android:textColor="@color/letter_dark_gray"
-                    />
+                    android:textSize="15dp" />
+
                 <TextView
                     android:id="@+id/timetableTitle_place"
                     android:layout_width="match_parent"
@@ -86,10 +138,10 @@
                     android:layout_marginTop="2dp"
                     android:paddingStart="32dp"
                     android:paddingEnd="32dp"
-                    android:textSize="22dp"
                     android:text="Horario"
                     android:textColor="@color/principal_color_dark_green"
-                    />
+                    android:textSize="22dp" />
+
                 <TextView
                     android:id="@+id/timetable_place"
                     android:layout_width="match_parent"
@@ -97,9 +149,9 @@
                     android:layout_marginTop="2dp"
                     android:paddingStart="32dp"
                     android:paddingEnd="32dp"
-                    android:textSize="15dp"
                     android:text="De 9:00 a.m a 10:00 pm"
-                    android:textColor="@color/letter_dark_gray" />
+                    android:textColor="@color/letter_dark_gray"
+                    android:textSize="15dp" />
 
                 <TextView
                     android:id="@+id/ubicationTitle_place"
@@ -108,31 +160,279 @@
                     android:layout_marginTop="2dp"
                     android:paddingStart="32dp"
                     android:paddingEnd="32dp"
-                    android:textSize="22dp"
                     android:text="Ubicacion"
                     android:textColor="@color/principal_color_dark_green"
+                    android:textSize="22dp" />
+
+                <fragment
+                    android:id="@+id/mapa"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:radius="150dp"
+
                     />
 
                 <TextView
                     android:id="@+id/galeryTitle_place"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
+                    android:layout_marginTop="10dp"
                     android:paddingStart="32dp"
                     android:paddingEnd="32dp"
-                    android:textSize="22dp"
                     android:text="Galeria de Imagenes"
                     android:textColor="@color/principal_color_dark_green"
-                    />
+                    android:textSize="22dp" />
+
+
+                <GridLayout
+                    android:id="@+id/gridlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="10dp"
+                    android:columnCount="4"
+                    android:gravity="center"
+                    android:paddingLeft="32dp">
+
+                    <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="7dp"
+                        android:background="#000"
+                        app:corner_radius="16dp">
+
+
+                        <ImageView
+                            android:id="@+id/imagen_galaria1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/food1" />
+
+
+                    </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+                    <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="7dp"
+                        android:background="#000"
+                        app:corner_radius="16dp">
+
+
+                        <ImageView
+                            android:id="@+id/imagen_galaria2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/food2" />
+
+
+                    </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+                    <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="7dp"
+                        android:background="#000"
+                        app:corner_radius="16dp">
+
+
+                        <ImageView
+                            android:id="@+id/imagen_galaria3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/food3" />
+
+
+                    </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+                    <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="7dp"
+                        android:background="#000"
+                        app:corner_radius="16dp">
+
+                        <ImageView
+                            android:id="@+id/imagen_galaria4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/food4" />
+
+
+                    </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+
+                </GridLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/Recurso34BotonCorazon"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="327dp"
+                android:layout_marginTop="178dp"
+                app:srcCompat="@drawable/recurso34botoncorazon" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="764dp"
+                android:background="@drawable/layout_comment"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_Coments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:textSize="20dp"
+                android:text="Comentarios"
+                android:textColor="@color/principal_color_dark_green"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_gravity="center"
+                    app:corner_radius="360dp"
+                    android:layout_marginLeft="32dp"
+                    android:background="#000">
+
+
+                    <ImageView
+                        android:id="@+id/imagen_galariae2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food2" />
+
+
+
+                </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Escribe un comentario"
+                    android:textColorHint="@color/principal_color_dark_green"
+                    android:padding="5dp"
+                    android:background="@drawable/edit_text_rounded"/>
 
 
 
             </LinearLayout>
 
-        </RelativeLayout>
+            <View
+                android:layout_width="335dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="32dp"
+                android:background="@color/principal_color_dark_green"/>
 
-    </ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
 
+                <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_gravity="center"
+                    app:corner_radius="360dp"
+                    android:layout_marginLeft="32dp"
+                    android:background="#000">
+
+
+                    <ImageView
+                        android:id="@+id/imagen_galariaejbhv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food3" />
+
+
+
+                </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/personComentName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:textSize="11dp"
+                        android:text="Ana Quiros"
+                        android:textColor="@color/principal_color_dark_green"
+                        />
+
+                    <TextView
+                        android:id="@+id/contenttextcoment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:textSize="9dp"
+                        android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget, porta"
+                        android:textColor="@color/letter_dark_gray"
+                        />
+
+                    <TextView
+                        android:id="@+id/comentDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:layout_marginLeft="210dp"
+                        android:textSize="9dp"
+                        android:text="September 9,2019."
+                        android:textColor="@color/letter_dark_gray"
+                        />
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_product_back"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/recurso32botonatras" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
 
 
 
